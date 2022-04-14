@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	height: 100vh;
+
+	font: 30px sans-serif;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 60px);
+	grid-template-rows: repeat(3, 60px);
+	gap: 10px;
+}
+
+.square {
+	box-shadow: 0 0 5px 0 #0006;
+	border-radius: 8px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.win {
+	background-color: rgb(238, 197, 122);
+	color: #fff;
+}
